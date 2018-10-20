@@ -14,6 +14,7 @@ import { AnimaisselvagensPage } from '../pages/animaisselvagens/animaisselvagens
 import { EstruturaparquePage } from '../pages/estruturaparque/estruturaparque';
 import { NovasespeciesPage } from '../pages/novasespecies/novasespecies';
 import { CrimesambientaisPage } from '../pages/crimesambientais/crimesambientais';
+import { SobrePage} from "../pages/sobre/sobre";
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { CrimesambientaisPage } from '../pages/crimesambientais/crimesambientais
     AnimaisselvagensPage,
     EstruturaparquePage,
     NovasespeciesPage,
-    CrimesambientaisPage
+    CrimesambientaisPage,
+    SobrePage
    
   ],
   imports: [
@@ -45,7 +47,8 @@ import { CrimesambientaisPage } from '../pages/crimesambientais/crimesambientais
     AnimaisselvagensPage,
     EstruturaparquePage,
     NovasespeciesPage,
-    CrimesambientaisPage
+    CrimesambientaisPage,
+    SobrePage
     
 
   ],

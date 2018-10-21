@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import {HomePage} from "../home/home";
 
 /**
  * Generated class for the SobrePage page.
@@ -15,11 +16,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class SobrePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navSobre: NavController, public navParams: NavParams) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad SobrePage');
-  }
+  home() {
+    this.navSobre.setRoot(HomePage);
 
+  }
 }

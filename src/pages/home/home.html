@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar color="GrayPark">
+      <button ion-button menuToggle>
+          <ion-icon name="menu" class="voltar"></ion-icon>
+        </button> 
+
+       <ion-buttons end>
+         <button ion-button id="iconePontos" (click)="colocaPontos"><ion-icon name="pin"></ion-icon></button>
+        </ion-buttons>
+
+      <ion-title><p class="titleNavbar" text-wrap>Parque Nacional de Brasília</p></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+<ion-content class="corpo1" padding >
+  
+</ion-content>
+
+
+<ion-footer id="rodape">
+  
+    <button ion-button (click)="openNotificacoesPage()" >
+      <ion-icon name="warning" class="iconesRodape"></ion-icon>
+    </button>
+
+    <button ion-button (click)="openSobrePage()">
+        <ion-icon name="information-circle"></ion-icon>
+      </button>
+ 
+  
+    <button ion-button (click)="openConfiguracoesPage()">
+      <ion-icon name="settings"></ion-icon>
+    </button>
+
+
+</ion-footer>

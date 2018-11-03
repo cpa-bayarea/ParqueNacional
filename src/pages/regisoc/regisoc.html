@@ -1,0 +1,24 @@
+
+<ion-header>
+
+  <ion-navbar color="GrayPark">
+      <ion-buttons end>
+        <button ion-button  (click)="home()">
+          <ion-icon class="voltar" name="home" ></ion-icon>
+        </button>
+      </ion-buttons>  
+    <ion-title><p class="titleNavbar">Visualizar Ocorrências</p></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+  <button ion-item (click)=animaisPerdidos()>Animais Perdidos</button>
+  <button ion-item (click)=animaisSelvagens()>Animais Selvagens</button>
+  <button ion-item (click)=crimesAmbientais()>Crimes Ambientais</button>
+  <button ion-item (click)=estruturaParque()>Estrutura do Parque</button>
+  <button ion-item (click)=novasEspecies()>Novas Espécies</button>
+</ion-list>
+</ion-content>

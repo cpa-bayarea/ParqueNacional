@@ -1,0 +1,46 @@
+<ion-header>
+
+  <ion-navbar color="GrayPark">
+    <ion-buttons end>
+      <button ion-button  (click)="home()">
+        <ion-icon class="voltar" name="home" ></ion-icon>
+      </button>
+    </ion-buttons> 
+      <ion-title><p class="titleNavbar">Login</p></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content id="corpoLogin" padding>
+  <h4>Faça seu Login</h4>
+
+  <form padding [formGroup]="loginForm" (submit)="login()" novalidate>
+      <ion-item>
+        <ion-input [(ngModel)]="email" formControlName="email" type="email" 
+                    placeholder="Digite seu email aqui" clearInput clearonEdit="false"> 
+  
+        </ion-input>
+      </ion-item>
+  
+      <h5 *ngIf="errorEmail" class="error">{{messageEmail}} </h5>
+      
+      <ion-item>
+        <ion-input [(ngModel)]="password" formControlName="password" type="password" 
+                    placeholder="Digite sua Senha" ClearInput ClearonEdit="false">
+  
+        </ion-input>
+      </ion-item>
+  
+      <h5 *ngIf="errorPassword" class="error"> {{messagePassword}} </h5>
+
+      <p>
+      <button ion-button block outline color="DarkGreenPark">Login</button>
+      </p>
+      <p>
+          <button ion-button block inline color="DarkGreenPark">Cadastrar</button>
+      </p>
+      <h6>Ainda não é Cadastrado?</h6>
+    </form>
+
+</ion-content>

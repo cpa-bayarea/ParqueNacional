@@ -1,0 +1,47 @@
+.titleNavbar{
+  color: #4E5166;
+  font-size: 12pt;
+}
+
+.acesso{
+    background-color: white;
+    color: black;
+    
+}
+
+.voltar{
+    color: #4E5166;
+}
+
+#iconePontos{
+    color: #b22222;
+    font-size:25px;
+    padding-right: 18px; 
+}
+
+ion-content.corpo1{
+    
+    background-image: url("../../assets/imgs/mapa-com-pontos.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+ion-content.corpo1:hover{
+    
+    background-image: url("../../assets/imgs/mapa-sem-pontos.jpg") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+  
+
+ion-footer#rodape{
+    background-color:#DADFE1 ;
+}
+
+ion-footer#rodape button{
+  background-color: #DADFE1;
+  color: #4E5166;
+
+}

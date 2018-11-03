@@ -1,0 +1,27 @@
+ion-content#bodyAjuda{
+    background: #dadfe1;
+}
+#itemAjuda{
+    color: black;
+    float: center;
+    width: 320px;
+    height: 350px;
+    margin: 0px;
+    border: 5px solid white;
+    background: #ffffff;
+    box-shadow: 1px 1px 3px rgba(0,0,0, 0.4);
+}
+
+ion-content#bodyAjuda h1{
+    font-size: 15pt;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+
+ion-content#bodyAjuda h2{
+    color: #b22222;
+    font-size: 13pt;
+    font-weight: bold;
+    padding-top: 100px;
+}

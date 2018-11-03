@@ -1,0 +1,51 @@
+<ion-header>
+
+  <ion-navbar color="GrayPark">
+    <ion-buttons end>
+      <button ion-button color="DarkGrayPark" (click)="home()">
+        <ion-icon name="home" ></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title><p class="titleNavbar">Resgistrar Ocorrência</p></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content id="bodyR-O" padding>
+  <form id="listaR-O">
+    <ion-list >
+      <ion-item>
+        <ion-label floating>Titulo</ion-label>
+        <ion-input type="text" name="titulo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Tipo de Ocorrência</ion-label>
+        <ion-select >
+          <ion-option value="ap">Animais Perdidos</ion-option>
+          <ion-option value="as">Animais Selvagens</ion-option>
+          <ion-option value="ca">Crimes Ambientais</ion-option>
+          <ion-option value="ep">Estrutura do Parque</ion-option>
+          <ion-option value="ne">Novas Especies</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Localização</ion-label>
+        <ion-input type="text" name="localizacao"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label floating>Descrição</ion-label>
+        <ion-input type="text" name="descricao"></ion-input>
+      </ion-item>
+      <p>
+        <button color="DarkGreenPark" ion-button block outline (click)="getPhoto()">
+          <ion-icon name="camera"></ion-icon> ⠀Tirar foto</button>
+      </p>
+
+      <p>
+        <button ion-button block inline color="DarkGreenPark"  (click)="ShowAlert()">Enviar</button>
+      </p>
+    </ion-list>
+
+  </form>
+</ion-content>
